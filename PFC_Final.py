@@ -21,7 +21,7 @@ def rpsMiniGame (scoreJoueur= 0, scoreIa= 0, tieGame=0 ):
         print(pseudo, scoreJoueur)
         #Afficher scoreIa
         print("IA", scoreIa)
-        #Sinon si choixJoueur égale pierre et si choixIa égale feuille
+    #Sinon si choixJoueur égale pierre et si choixIa égale feuille
     elif choixJoueur == "pierre" and choixIa == "feuille" :
             #Alors afficher le message "Dommage, vous avez perdu la manche"
             print("Dommage, vous avez perdu la manche")
@@ -31,7 +31,7 @@ def rpsMiniGame (scoreJoueur= 0, scoreIa= 0, tieGame=0 ):
             print(pseudo, scoreJoueur)
             #Afficher scoreIa
             print("IA", scoreIa)
-        #Sinon si choixJoueur égale pierre et si choixIa égale pierre
+    #Sinon si choixJoueur égale pierre et si choixIa égale pierre
     elif choixJoueur == "pierre" and choixIa == "pierre" :
             #Alors afficher le message "C'est une égalité!"
             print("C'est une égalité!")
@@ -42,7 +42,7 @@ def rpsMiniGame (scoreJoueur= 0, scoreIa= 0, tieGame=0 ):
             #Afficher scoreIa
             print("IA", scoreIa)
 
-        #Si choixJoueur égale feuille et si choixIa égale pierre
+    #Sinom si choixJoueur égale feuille et si choixIa égale pierre
     elif choixJoueur == "feuille" and choixIa == "pierre" :
             #Alors afficher le message "Bravo, vous avez gagnez la manche"
             print("Bravo, vous avez gagnez la manche")
@@ -52,7 +52,7 @@ def rpsMiniGame (scoreJoueur= 0, scoreIa= 0, tieGame=0 ):
             print(pseudo, scoreJoueur)
             #Afficher scoreIa
             print("IA", scoreIa)
-        #Sinon si choixJoueur égale feuille et si choixIa égale ciseaux
+    #Sinon si choixJoueur égale feuille et si choixIa égale ciseaux
     elif choixJoueur == "feuille" and choixIa == "ciseaux" :
             #Alors afficher le message "Dommage, vous avez perdu la manche"
             print("Dommage, vous avez perdu la manche")
@@ -62,7 +62,7 @@ def rpsMiniGame (scoreJoueur= 0, scoreIa= 0, tieGame=0 ):
             print(pseudo, scoreJoueur)
             #Afficher scoreIa
             print("IA", scoreIa)
-        #Sinon si choixJoueur égale feuille et si choixIa égale feuille
+    #Sinon si choixJoueur égale feuille et si choixIa égale feuille
     elif choixJoueur == "feuille" and choixIa == "feuille" :
             #Alors afficher le message "C'est une égalité!"
             print("C'est une égalité!")
@@ -73,7 +73,7 @@ def rpsMiniGame (scoreJoueur= 0, scoreIa= 0, tieGame=0 ):
             #Afficher scoreIa
             print("IA", scoreIa)
 
-        #Si choixJoueur égale ciseaux et si choixIa égale feuille
+    #Sinon si choixJoueur égale ciseaux et si choixIa égale feuille
     elif choixJoueur == "ciseaux" and choixIa == "feuille" :
             #Alors afficher le message "Bravo, vous avez gagnez la manche"
             print("Bravo, vous avez gagnez la manche")
@@ -83,7 +83,7 @@ def rpsMiniGame (scoreJoueur= 0, scoreIa= 0, tieGame=0 ):
             print(pseudo, scoreJoueur)
             #Afficher scoreIa
             print("IA", scoreIa)
-        #Sinon si choixJoueur égale ciseaux et si choixIa égale Pierre
+    #Sinon si choixJoueur égale ciseaux et si choixIa égale Pierre
     elif choixJoueur == "ciseaux" and choixIa == "pierre" :
             #Alors afficher le message "Dommage, vous avez perdu la manche"
             print("Dommage, vous avez perdu la manche")
@@ -93,7 +93,7 @@ def rpsMiniGame (scoreJoueur= 0, scoreIa= 0, tieGame=0 ):
             print(pseudo, scoreJoueur)
             #Afficher scoreIa
             print("IA", scoreIa)
-        #Sinon si choixJoueur égale ciseaux et si choixIa égale ciseaux
+    #Sinon si choixJoueur égale ciseaux et si choixIa égale ciseaux
     elif choixJoueur == "ciseaux" and choixIa == "ciseaux" :
             #Alors afficher le message "C'est une égalité!"
             print("C'est une égalité!")
@@ -114,7 +114,7 @@ def rpsMiniGame (scoreJoueur= 0, scoreIa= 0, tieGame=0 ):
     if scoreJoueur == 3 :
         #Retourner
             #Afficher "Félicitation, vous avez battu le bot. Vous faites partie de l'ELITE de la nation"
-            print("Félicitation, vous avez battu le bot. Vous faites partie de l'ELITE de la nation")
+            print("Félicitation, vous   avez battu le bot. Vous faites partie de l'ELITE de la nation")
             #scoreJoueur
             print("Votre score est de" ,scoreJoueur)
             #scoreIa
