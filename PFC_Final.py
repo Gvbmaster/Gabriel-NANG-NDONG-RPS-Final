@@ -13,6 +13,7 @@ def rpsMiniGame (scoreJoueur= 0, scoreIa= 0, tieGame=0 ):
         try:
                 #Définir la variable choixJoueur qui prend l'index d'un élément de la liste coup en fonction de l'input du joueur.
                 choixJoueur= listeCoups[int(input("Choissiser 0 pour pierre, 1 pour feuille ou 2 pour ciseaux"))]
+                break
         except IndexError:
                 print("Le choix n'est pas correcte, veuillez entrer un chiffre entre 0 et 2")
     #Définir la variable choixIa à laquelle est associé le retour d'execution de la fonction random
