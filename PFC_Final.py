@@ -1,14 +1,20 @@
-#DEBUT0
+#DEBUT
 #On admet que la fonction random existe et renvoie un chiffre aléatoire entre 0 et 2
 from random import randint
 #On admet que la fonction input existe et demander à l'utilisateur une chaine de caractère et la retourne
+#Définir la variable pseudo à laquelle est associé le retour d'execution de la fonction input
 pseudo = input("Entrer votre pseudo")
 #Définir la fonction rpsMiniGame qui contient le mini-jeu
 def rpsMiniGame (scoreJoueur= 0, scoreIa= 0, tieGame=0 ):
     #Definir une liste coups [pierre, feuille, ciseaux]
     listeCoups= ["pierre","feuille","ciseaux"]
-    #Définir la variable choixJoueur qui prend l'index d'un élément de la liste coup en fonction de l'input du joueur.
-    choixJoueur= listeCoups[int(input("Choissiser 0 pour pierre, 1 pour feuille ou 2 pour ciseaux"))]
+    coupCorrect = False
+    while coupCorrect == False :
+        try:
+                #Définir la variable choixJoueur qui prend l'index d'un élément de la liste coup en fonction de l'input du joueur.
+                choixJoueur= listeCoups[int(input("Choissiser 0 pour pierre, 1 pour feuille ou 2 pour ciseaux"))]
+        except IndexError:
+                print("Le choix n'est pas correcte, veuillez entrer un chiffre entre 0 et 2")
     #Définir la variable choixIa à laquelle est associé le retour d'execution de la fonction random
     choixIa= listeCoups[randint(0,2)]
     #Si choixJoueur égale pierre et si choixIa égale ciseaux
